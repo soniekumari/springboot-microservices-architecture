@@ -1,5 +1,5 @@
 # Spring Boot Microservices Architecture
-A complete backend microservices architecture built using Spring Boot, inspired by Durgesh Sir's 2023 tutorial series. It includes Hotel, Rating, and User services with Eureka Discovery, Config Server, and API Gateway.
+A complete backend microservices architecture built using Spring Boot, It includes Hotel, Rating, and User services with Eureka Discovery, Config Server, and API Gateway.
 # Tech Stack
 - Java 17
 - Spring Boot
