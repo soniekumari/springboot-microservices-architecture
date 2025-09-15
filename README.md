@@ -29,7 +29,6 @@ springboot-microservices-architecture/<br>
 ├── hotel-service/<br>
 ├── rating-service/<br>
 ├── user-service/<br>
-├── architecture.png<br>
 └── README.md<br>
 
 # Security Features
