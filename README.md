@@ -4,7 +4,7 @@ A complete backend microservices architecture built using Spring Boot, It includ
 - Java 17
 - Spring Boot
 - Spring Cloud (Eureka, Config Server, Gateway)
-- MySQL & MongoDB
+- MySQL
 - Feign Client, Resilience4J
 - JWT Security
 - Postman, JUnit
