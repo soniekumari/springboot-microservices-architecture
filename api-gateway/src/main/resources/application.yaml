@@ -5,7 +5,7 @@ spring:
   application:
     name: API-GATEWAY
   main:
-    web-application-type: reactive  # ✅ Important: use WebFlux
+    web-application-type: reactive  # Important: use WebFlux
   cloud:
     gateway:
       server:
@@ -25,3 +25,21 @@ spring:
               uri: lb://ratingservice
               predicates:
                 - Path=/ratings/**
+
+#Okta configuration for api gateway
+  security:
+    oauth2:
+      client:
+        registration:
+          okta:
+            client-id: 0oavmgbzcb6fwz7kx697
+            client-secret: KDXMkwmZDcimw5PNbAujTYGf4OdPyolEwjprk_6aCoiAjJXmnodAgklFuXRHbXst
+            scope: openid, profile, email, offline_access
+            provider: okta
+            redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
+        provider:
+          okta:
+            issuer-uri: https://integrator-8582351.okta.com/oauth2/default
+      resourceserver:
+          jwt:
+            jwk-set-uri: https://integrator-8582351.okta.com/oauth2/default
